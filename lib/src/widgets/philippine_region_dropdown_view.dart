@@ -25,6 +25,17 @@ class _PhilippineDropdownView<T> extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DropdownButtonFormField<T>(
+      decoration: InputDecoration(
+                            prefixIcon: Icon(
+                              Icons.location_city_outlined,
+                              color: Colors.green,
+                            ),
+                            border: OutlineInputBorder(),
+                            focusedBorder: OutlineInputBorder(
+                              borderSide:
+                                  BorderSide(width: 2.0, color: Colors.green),
+                            ),
+                          ),
       key: ValueKey(choices),
       value: value,
       isExpanded: true,
