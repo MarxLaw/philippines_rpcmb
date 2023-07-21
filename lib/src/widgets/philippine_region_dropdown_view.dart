@@ -25,6 +25,10 @@ class _PhilippineDropdownView<T> extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DropdownButtonFormField<T>(
+      icon: const Icon(
+                            Icons.arrow_drop_down_circle,
+                            color: Colors.green,
+                          ),
       decoration: InputDecoration(
                             prefixIcon: Icon(
                               Icons.location_city_outlined,
