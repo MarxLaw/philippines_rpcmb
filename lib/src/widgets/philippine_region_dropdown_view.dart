@@ -29,7 +29,6 @@ class _PhilippineDropdownView<T> extends StatelessWidget {
                             Icons.arrow_drop_down_circle,
                             color: Colors.green,
                           ),
-      style: TextStyle(color: Colors.green),
       decoration: InputDecoration(
                             prefixIcon: Icon(
                               Icons.location_pin,
