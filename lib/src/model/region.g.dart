@@ -17,5 +17,5 @@ _$_Region _$$_RegionFromJson(Map<String, dynamic> json) => _$_Region(
 Map<String, dynamic> _$$_RegionToJson(_$_Region instance) => <String, dynamic>{
       'id': instance.id,
       'regionName': instance.regionName,
-      'provinces': instance.provinces,
+      //'provinces': instance.provinces,
     };
