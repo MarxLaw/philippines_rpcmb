@@ -104,7 +104,7 @@ class PhilippineProvinceDropdownView extends StatelessWidget {
       onChanged: onChanged,
       value: value,
       itemBuilder: (BuildContext context, e) {
-        return itemBuilder?.call(context, e) ?? DropdownMenuItem(value: e, child: Text(e.name));
+        return itemBuilder?.call(context, e) ?? DropdownMenuItem(value: e, child: Text(e.id));
       },
       hint: const Text('Select Province'),
       selectedItemBuilder: (BuildContext context, Province value) {
