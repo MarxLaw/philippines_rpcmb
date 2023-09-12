@@ -1,4 +1,5 @@
 import '../src.dart';
+
 const philippineRegions = const [
   Region(
     id: "01",
@@ -4178,12 +4179,6 @@ const philippineRegions = const [
           ),
         ],
       ),
-    ],
-  ),
-  Region(
-    id: "02",
-    regionName: "REGION II",
-    provinces: [
       Province(
         id: "BATANES",
         name: "BATANES",
@@ -7186,12 +7181,6 @@ const philippineRegions = const [
           ),
         ],
       ),
-    ],
-  ),
-  Region(
-    id: "03",
-    regionName: "REGION III",
-    provinces: [
       Province(
         id: "AURORA",
         name: "AURORA",
@@ -11260,12 +11249,6 @@ const philippineRegions = const [
           ),
         ],
       ),
-    ],
-  ),
-  Region(
-    id: "4A",
-    regionName: "REGION IV-A",
-    provinces: [
       Province(
         id: "BATANGAS",
         name: "BATANGAS",
@@ -16319,12 +16302,6 @@ const philippineRegions = const [
           ),
         ],
       ),
-    ],
-  ),
-  Region(
-    id: "4B",
-    regionName: "REGION IV-B",
-    provinces: [
       Province(
         id: "MARINDUQUE",
         name: "MARINDUQUE",
@@ -18336,12 +18313,6 @@ const philippineRegions = const [
           ),
         ],
       ),
-    ],
-  ),
-  Region(
-    id: "05",
-    regionName: "REGION V",
-    provinces: [
       Province(
         id: "ALBAY",
         name: "ALBAY",
@@ -22659,12 +22630,6 @@ const philippineRegions = const [
           ),
         ],
       ),
-    ],
-  ),
-  Region(
-    id: "06",
-    regionName: "REGION VI",
-    provinces: [
       Province(
         id: "AKLAN",
         name: "AKLAN",
@@ -27695,12 +27660,6 @@ const philippineRegions = const [
           ),
         ],
       ),
-    ],
-  ),
-  Region(
-    id: "07",
-    regionName: "REGION VII",
-    provinces: [
       Province(
         id: "BOHOL",
         name: "BOHOL",
@@ -31660,12 +31619,6 @@ const philippineRegions = const [
           ),
         ],
       ),
-    ],
-  ),
-  Region(
-    id: "08",
-    regionName: "REGION VIII",
-    provinces: [
       Province(
         id: "BILIRAN",
         name: "BILIRAN",
@@ -37105,12 +37058,6 @@ const philippineRegions = const [
           ),
         ],
       ),
-    ],
-  ),
-  Region(
-    id: "09",
-    regionName: "REGION IX",
-    provinces: [
       Province(
         id: "ZAMBOANGA DEL NORTE",
         name: "ZAMBOANGA DEL NORTE",
@@ -39491,12 +39438,6 @@ const philippineRegions = const [
           ),
         ],
       ),
-    ],
-  ),
-  Region(
-    id: "10",
-    regionName: "REGION X",
-    provinces: [
       Province(
         id: "BUKIDNON",
         name: "BUKIDNON",
@@ -42210,12 +42151,6 @@ const philippineRegions = const [
           ),
         ],
       ),
-    ],
-  ),
-  Region(
-    id: "11",
-    regionName: "REGION XI",
-    provinces: [
       Province(
         id: "COMPOSTELA VALLEY",
         name: "COMPOSTELA VALLEY",
@@ -43761,12 +43696,6 @@ const philippineRegions = const [
           ),
         ],
       ),
-    ],
-  ),
-  Region(
-    id: "12",
-    regionName: "REGION XII",
-    provinces: [
       Province(
         id: "COTABATO (NORTH COT.)",
         name: "COTABATO (NORTH COT.)",
@@ -45300,12 +45229,6 @@ const philippineRegions = const [
           ),
         ],
       ),
-    ],
-  ),
-  Region(
-    id: "13",
-    regionName: "REGION XIII",
-    provinces: [
       Province(
         id: "AGUSAN DEL NORTE",
         name: "AGUSAN DEL NORTE",
@@ -47168,12 +47091,6 @@ const philippineRegions = const [
           ),
         ],
       ),
-    ],
-  ),
-  Region(
-    id: "BARMM",
-    regionName: "BARMM",
-    provinces: [
       Province(
         id: "BASILAN",
         name: "BASILAN",
@@ -50625,12 +50542,6 @@ const philippineRegions = const [
           ),
         ],
       ),
-    ],
-  ),
-  Region(
-    id: "CAR",
-    regionName: "CAR",
-    provinces: [
       Province(
         id: "ABRA",
         name: "ABRA",
@@ -52395,6 +52306,81 @@ const philippineRegions = const [
         ],
       ),
     ],
+  ),
+  Region(
+    id: "02",
+    regionName: "REGION II",
+    provinces: [],
+  ),
+  Region(
+    id: "03",
+    regionName: "REGION III",
+    provinces: [],
+  ),
+  Region(
+    id: "4A",
+    regionName: "REGION IV-A",
+    provinces: [],
+  ),
+  Region(
+    id: "4B",
+    regionName: "REGION IV-B",
+    provinces: [],
+  ),
+  Region(
+    id: "05",
+    regionName: "REGION V",
+    provinces: [],
+  ),
+  Region(
+    id: "06",
+    regionName: "REGION VI",
+    provinces: [],
+  ),
+  Region(
+    id: "07",
+    regionName: "REGION VII",
+    provinces: [],
+  ),
+  Region(
+    id: "08",
+    regionName: "REGION VIII",
+    provinces: [],
+  ),
+  Region(
+    id: "09",
+    regionName: "REGION IX",
+    provinces: [],
+  ),
+  Region(
+    id: "10",
+    regionName: "REGION X",
+    provinces: [],
+  ),
+  Region(
+    id: "11",
+    regionName: "REGION XI",
+    provinces: [],
+  ),
+  Region(
+    id: "12",
+    regionName: "REGION XII",
+    provinces: [],
+  ),
+  Region(
+    id: "13",
+    regionName: "REGION XIII",
+    provinces: [],
+  ),
+  Region(
+    id: "BARMM",
+    regionName: "BARMM",
+    provinces: [],
+  ),
+  Region(
+    id: "CAR",
+    regionName: "CAR",
+    provinces: [],
   ),
   Region(
     id: "NCR",
