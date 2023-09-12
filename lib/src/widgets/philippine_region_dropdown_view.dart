@@ -58,12 +58,12 @@ class PhilippineRegionDropdownView extends StatelessWidget {
     Key? key,
     this.regions = philippineRegions,
     required this.onChanged,
-    this.value,
+    this.value = "REGION I",
     this.itemBuilder,
   }) : super(key: key);
   final List<Region> regions;
   final ValueChanged<Region?> onChanged;
-  final Region? REGION I;
+  final Region? value;
   final DropdownItemBuilder<Region>? itemBuilder;
 
   @override
