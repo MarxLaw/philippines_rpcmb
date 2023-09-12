@@ -4182,7 +4182,7 @@ const philippineRegions = const [
   ),
   Region(
     id: "01",
-    regionName: "REGION I",
+    regionName: "REGION II",
     provinces: [
       Province(
         id: "BATANES",
