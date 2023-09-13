@@ -89,11 +89,12 @@ class PhilippineProvinceDropdownView extends StatelessWidget {
     required this.provinces,
     required this.onChanged,
     this.value,
+    this.region,
     this.itemBuilder,
   }) : super(key: key);
   final List<Province> provinces;
   final Province? value;
-
+  final String? region;
   final ValueChanged<Province?> onChanged;
   final DropdownItemBuilder<Province>? itemBuilder;
 
@@ -103,8 +104,10 @@ class PhilippineProvinceDropdownView extends StatelessWidget {
       choices: provinces,
       onChanged: onChanged,
       value: value,
+      region: value.regionName,
       itemBuilder: (BuildContext context, e) {
-        return itemBuilder?.call(context, e) ?? DropdownMenuItem(value: e, child: Text(e.id));
+        return itemBuilder?.call(context, e) ??
+            DropdownMenuItem(value: e, child: Text(e.id));
       },
       hint: const Text('Select Province'),
       selectedItemBuilder: (BuildContext context, Province value) {
