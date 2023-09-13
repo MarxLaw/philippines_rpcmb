@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../philippines_rpcmb.dart';
 
-typedef DropdownItemBuilder<T> = DropdownMenuItem<T> Function(BuildContext context, T value);
+typedef DropdownItemBuilder<T> = DropdownMenuItem<T> Function(
+    BuildContext context, T value);
 typedef SelectedItemBuilder<T> = Widget Function(BuildContext context, T value);
 
 class _PhilippineDropdownView<T> extends StatelessWidget {
@@ -11,6 +12,7 @@ class _PhilippineDropdownView<T> extends StatelessWidget {
     required this.choices,
     required this.onChanged,
     this.value,
+    this.region,
     required this.itemBuilder,
     required this.hint,
     required this.selectedItemBuilder,
@@ -18,6 +20,7 @@ class _PhilippineDropdownView<T> extends StatelessWidget {
   final List<T> choices;
   final ValueChanged<T?> onChanged;
   final T? value;
+  final String? region;
   final DropdownItemBuilder<T> itemBuilder;
   final SelectedItemBuilder<T> selectedItemBuilder;
   final Widget hint;
@@ -26,27 +29,28 @@ class _PhilippineDropdownView<T> extends StatelessWidget {
   Widget build(BuildContext context) {
     return DropdownButtonFormField<T>(
       icon: const Icon(
-                            Icons.arrow_drop_down_circle,
-                            color: Colors.green,
-                          ),
+        Icons.arrow_drop_down_circle,
+        color: Colors.green,
+      ),
       decoration: InputDecoration(
-                            prefixIcon: Icon(
-                              Icons.location_pin,
-                              color: Colors.green,
-                            ),
-                            border: OutlineInputBorder(),
-                            focusedBorder: OutlineInputBorder(
-                              borderSide:
-                                  BorderSide(width: 2.0, color: Colors.green),
-                            ),
-                          ),
+        prefixIcon: Icon(
+          Icons.location_pin,
+          color: Colors.green,
+        ),
+        border: OutlineInputBorder(),
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(width: 2.0, color: Colors.green),
+        ),
+      ),
       key: ValueKey(choices),
       value: value,
       isExpanded: true,
       items: choices.map((e) => itemBuilder.call(context, e)).toList(),
       hint: hint,
       selectedItemBuilder: (BuildContext context) {
-        return choices.map((e) => selectedItemBuilder.call(context, e)).toList();
+        return choices
+            .map((e) => selectedItemBuilder.call(context, e))
+            .toList();
       },
       onChanged: onChanged,
     );
@@ -73,7 +77,8 @@ class PhilippineRegionDropdownView extends StatelessWidget {
       onChanged: onChanged,
       value: value,
       itemBuilder: (BuildContext context, e) {
-        return itemBuilder?.call(context, e) ?? DropdownMenuItem(value: e, child: Text(e.regionName));
+        return itemBuilder?.call(context, e) ??
+            DropdownMenuItem(value: e, child: Text(e.regionName));
       },
       hint: const Text('Select Region'),
       selectedItemBuilder: (BuildContext context, Region value) {
@@ -104,7 +109,7 @@ class PhilippineProvinceDropdownView extends StatelessWidget {
       choices: provinces,
       onChanged: onChanged,
       value: value,
-      region: value.regionName,
+      region: value?.regionName,
       itemBuilder: (BuildContext context, e) {
         return itemBuilder?.call(context, e) ??
             DropdownMenuItem(value: e, child: Text(e.id));
@@ -138,7 +143,8 @@ class PhilippineMunicipalityDropdownView extends StatelessWidget {
       onChanged: onChanged,
       value: value,
       itemBuilder: (BuildContext context, e) {
-        return itemBuilder?.call(context, e) ?? DropdownMenuItem(value: e, child: Text(e.name));
+        return itemBuilder?.call(context, e) ??
+            DropdownMenuItem(value: e, child: Text(e.name));
       },
       hint: const Text('Select Municipality'),
       selectedItemBuilder: (BuildContext context, Municipality value) {
@@ -169,7 +175,8 @@ class PhilippineBarangayDropdownView extends StatelessWidget {
       onChanged: onChanged,
       value: value,
       itemBuilder: (BuildContext context, e) {
-        return itemBuilder?.call(context, e) ?? DropdownMenuItem(value: e, child: Text(e));
+        return itemBuilder?.call(context, e) ??
+            DropdownMenuItem(value: e, child: Text(e));
       },
       hint: const Text('Select Barangay'),
       selectedItemBuilder: (BuildContext context, String value) {
