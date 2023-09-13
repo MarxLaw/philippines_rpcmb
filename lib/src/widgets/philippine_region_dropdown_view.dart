@@ -91,19 +91,24 @@ class PhilippineProvinceDropdownView extends StatelessWidget {
     Key? key,
     required this.provinces,
     required this.onChanged,
+    required this.onRegionNameSelected,
     this.value,
     this.itemBuilder,
   }) : super(key: key);
   final List<Province> provinces;
   final Province? value;
   final ValueChanged<Province?> onChanged;
+  final ValueChanged<String?> onRegionNameSelected;
   final DropdownItemBuilder<Province>? itemBuilder;
 
   @override
   Widget build(BuildContext context) {
     return _PhilippineDropdownView(
       choices: provinces,
-      onChanged: onChanged,
+      onChanged: (selectedProvince) {
+        onChanged(selectedProvince); // Pass the selected province to onChanged callback
+        onRegionNameSelected(selectedProvince?.regionName); // Pass the regionName to onRegionNameSelected callback
+      },
       value: value,
       itemBuilder: (BuildContext context, e) {
         return itemBuilder?.call(context, e) ??
