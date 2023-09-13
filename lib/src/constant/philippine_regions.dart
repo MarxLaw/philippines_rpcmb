@@ -52402,15 +52402,15 @@ const philippineRegions = const [
     regionName: "NCR",
     provinces: [
       Province(
-        id: "NATIONAL CAPITAL REGION - FOURTH DISTRICT",
-        name: "NATIONAL CAPITAL REGION - FOURTH DISTRICT",
+        id: "NCR - FOURTH DISTRICT",
+        name: "NCR - FOURTH DISTRICT",
         regionId: "NCR",
         regionName: "NCR",
         municipalities: [
           Municipality(
             id: "CITY OF LAS PIÑAS",
             name: "CITY OF LAS PIÑAS",
-            provinceName: "NATIONAL CAPITAL REGION - FOURTH DISTRICT",
+            provinceName: "NCR - FOURTH DISTRICT",
             barangays: [
               "ALMANZA DOS",
               "ALMANZA UNO",
@@ -52724,15 +52724,15 @@ const philippineRegions = const [
         ],
       ),
       Province(
-        id: "NATIONAL CAPITAL REGION - MANILA",
-        name: "NATIONAL CAPITAL REGION - MANILA",
+        id: "NCR - MANILA",
+        name: "NCR - MANILA",
         regionId: "NCR",
         regionName: "NCR",
         municipalities: [
           Municipality(
             id: "BINONDO",
             name: "BINONDO",
-            provinceName: "NATIONAL CAPITAL REGION - MANILA",
+            provinceName: "NCR - MANILA",
             barangays: [
               "BARANGAY 287",
               "BARANGAY 288",
@@ -52749,7 +52749,7 @@ const philippineRegions = const [
           Municipality(
             id: "ERMITA",
             name: "ERMITA",
-            provinceName: "NATIONAL CAPITAL REGION - MANILA",
+            provinceName: "NCR - MANILA",
             barangays: [
               "BARANGAY 659",
               "BARANGAY 659-A",
@@ -52769,7 +52769,7 @@ const philippineRegions = const [
           Municipality(
             id: "INTRAMUROS",
             name: "INTRAMUROS",
-            provinceName: "NATIONAL CAPITAL REGION - MANILA",
+            provinceName: "NCR - MANILA",
             barangays: [
               "BARANGAY 654",
               "BARANGAY 655",
