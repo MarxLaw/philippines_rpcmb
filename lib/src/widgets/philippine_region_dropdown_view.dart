@@ -107,11 +107,11 @@ class PhilippineProvinceDropdownView extends StatelessWidget {
       value: value,
       itemBuilder: (BuildContext context, e) {
         return itemBuilder?.call(context, e) ??
-            DropdownMenuItem(value: e, child: Text(e.id));
+            DropdownMenuItem(value: e, child: Text(e.name));
       },
       hint: const Text('Select Province'),
       selectedItemBuilder: (BuildContext context, Province value) {
-        return Text(value.name, overflow: TextOverflow.ellipsis);
+        return Text(value.regionName, overflow: TextOverflow.ellipsis);
       },
     );
   }
